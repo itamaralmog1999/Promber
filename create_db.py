@@ -1,3 +1,4 @@
+#בס"ד
 import enum
 import uuid
 from datetime import datetime
@@ -96,7 +97,6 @@ class ForcedFavoriteProvider(Base):
     provider_id = Column(String, ForeignKey("providers.id"), nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-
 # ========================================================
 # 🔥 יצירת קובץ בסיס הנתונים המקומי forced.db בפועל 🔥
 # ========================================================
@@ -112,3 +112,4 @@ if __name__ == "__main__":
     Base.metadata.create_all(bind=engine)
     
     print("הצלחה! נוצר קובץ חדש בשם forced.db המכיל את כל טבלאות ה-MVP המעודכנות")
+#שכוייח גדול לך ולבינה המלאכותית שלך!
